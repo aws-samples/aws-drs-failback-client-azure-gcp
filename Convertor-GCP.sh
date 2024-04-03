@@ -23,7 +23,7 @@ iso_name="/root/aws-failback-livecd-64bit.iso"
 
 
 echo "Downloading Failback Client ISO"
-wget -O aws-failback-livecd-64bit.iso https://aws-elastic-disaster-recovery-$region_name.s3.amazonaws.com/latest/failback_livecd/aws-failback-livecd-64bit.iso
+wget -O aws-failback-livecd-64bit.iso https://aws-elastic-disaster-recovery-${region_name}.s3.${region_name}.amazonaws.com/latest/failback_livecd/aws-failback-livecd-64bit.iso
 
 echo "Mounting the Downloaded Failback Client ISO to /mnt"
 mount -v -o loop $iso_name /mnt
